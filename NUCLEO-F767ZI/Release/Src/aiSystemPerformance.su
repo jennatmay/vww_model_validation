@@ -1,0 +1,11 @@
+../Inc/aiTestUtility.h:151:20:_mon_alloc_reset	8	static
+../Inc/aiTestUtility.h:297:22:dwtIpInit	0	static
+../Inc/aiTestUtility.h:389:26:cyclesCounterEnd	24	static
+../Src/aiSystemPerformance.c:259:15:user_observer_cb	32	static
+../Src/aiSystemPerformance.c:220:13:aiDeInit	8	static
+../Src/aiSystemPerformance.c:609:12:aiTestConsole	16	static
+../Src/aiSystemPerformance.c:283:6:aiObserverInit	88	static
+../Src/aiSystemPerformance.c:322:6:aiObserverDone	176	static
+../Src/aiSystemPerformance.c:643:5:aiSystemPerformanceInit	56	static
+../Src/aiSystemPerformance.c:662:5:aiSystemPerformanceProcess	152	static,ignoring_inline_asm
+../Src/aiSystemPerformance.c:739:6:aiSystemPerformanceDeInit	8	static

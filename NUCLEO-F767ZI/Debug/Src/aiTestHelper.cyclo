@@ -1,0 +1,5 @@
+../Src/aiTestHelper.c:143:13:_aiPrintDataInfo	1
+../Src/aiTestHelper.c:41:6:aiPlatformVersion	1
+../Src/aiTestHelper.c:54:6:aiLogErr	2
+../Src/aiTestHelper.c:77:6:aiPrintBufferInfo	23
+../Src/aiTestHelper.c:154:6:aiPrintNetworkInfo	6

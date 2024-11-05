@@ -1,0 +1,17 @@
+../Src/aiPbMgr.c:179:6:encode_uint32	32	static
+../Src/aiPbMgr.c:261:6:encode_data_cb	16	static
+../Src/aiPbMgr.c:230:13:decode_data_cb	32	static
+../Src/aiPbMgr.c:58:6:aiPbMgrInit	56	static
+../Src/aiPbMgr.c:117:10:aiPbTensorFormat	8	static
+../Src/aiPbMgr.c:159:6:aiPbStrCopy	32	static
+../Src/aiPbMgr.c:202:6:encode_tensor_desc	144	static
+../Src/aiPbMgr.c:280:6:aiPbMgrSendResp	8	static
+../Src/aiPbMgr.c:84:5:aiPbMgrWaitAndProcess	16	static
+../Src/aiPbMgr.c:289:6:aiPbMgrSendAck	12	static
+../Src/aiPbMgr.c:298:6:aiPbMgrWaitAck	24	static
+../Src/aiPbMgr.c:307:6:aiPbMgrSendLog	40	static
+../Src/aiPbMgr.c:329:6:aiPbMgrSendLogV2	32	static
+../Src/aiPbMgr.c:353:6:aiPbMgrReceiveData	32	static
+../Src/aiPbMgr.c:370:6:aiPbMgrSendData	16	static
+../Src/aiPbMgr.c:388:6:aiPbMgrSendOperator	40	static
+../Src/aiPbMgr.c:455:6:aiPbCmdSync	4	static

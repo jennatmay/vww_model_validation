@@ -1,0 +1,11 @@
+../Src/linear.c:220:9:ai_linear_get_info	152	static
+../Src/linear.c:267:9:ai_linear_get_report	152	static
+../Src/linear.c:314:10:ai_linear_get_error	0	static
+../Src/linear.c:321:10:ai_linear_create	16	static
+../Src/linear.c:367:12:ai_linear_inputs_get	0	static
+../Src/linear.c:378:12:ai_linear_outputs_get	0	static
+../Src/linear.c:389:11:ai_linear_destroy	0	static
+../Src/linear.c:396:9:ai_linear_init	24	static
+../Src/linear.c:332:10:ai_linear_create_and_init	88	static
+../Src/linear.c:413:8:ai_linear_run	0	static
+../Src/linear.c:421:8:ai_linear_forward	0	static
