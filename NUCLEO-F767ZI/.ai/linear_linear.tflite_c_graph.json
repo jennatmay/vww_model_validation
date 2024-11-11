@@ -22,7 +22,7 @@
         }
     },
     "activations_alignment": 4,
-    "arguments": "generate --target stm32f7 --name linear -m C:/Users/jenna/Downloads/linear.tflite-NUCLEO-F767ZI-project (1)/NUCLEO-F767ZI/linear.tflite --compression none --verbosity 1 --allocate-inputs -O ram --allocate-outputs --memory-pool C:\\Users\\jenna\\AppData\\Local\\Temp\\mxAI_workspace6178512147914009268645686966884872\\mempools.json --workspace C:/Users/jenna/AppData/Local/Temp/mxAI_workspace6178512147914009268645686966884872 --output C:/Users/jenna/.stm32cubemx/linear_output",
+    "arguments": "generate --target stm32f7 --name linear -m C:/Users/jenna/Documents/382/vww_space_tracking/vww_model_validation/NUCLEO-F767ZI/linear.tflite --compression none --verbosity 1 --allocate-inputs -O ram --allocate-outputs --memory-pool C:\\Users\\jenna\\AppData\\Local\\Temp\\mxAI_workspace147701664347510012610111891590090797\\mempools.json --workspace C:/Users/jenna/AppData/Local/Temp/mxAI_workspace147701664347510012610111891590090797 --output C:/Users/jenna/.stm32cubemx/linear_output",
     "c_activations_count": 1,
     "c_arrays": [
         {
@@ -177,7 +177,7 @@
         ]
     },
     "data_alignment": 4,
-    "date_time": "2024-11-01T01:16:16-0500",
+    "date_time": "2024-11-10T22:53:45-0600",
     "inputs": [
         "serving_default_input_layer0_output"
     ],

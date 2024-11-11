@@ -3,7 +3,7 @@
   ******************************************************************************
   * @file    linear_config.h
   * @author  AST Embedded Analytics Research Platform
-  * @date    2024-11-01T12:08:00-0500
+  * @date    2024-11-11T00:20:07-0600
   * @brief   AI Tool Automatic Code Generator for Custom Layers Implementation
   ******************************************************************************
   * @attention

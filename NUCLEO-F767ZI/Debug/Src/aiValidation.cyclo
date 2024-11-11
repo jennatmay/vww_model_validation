@@ -6,7 +6,7 @@
 ../Inc/aiTestUtility.h:344:22:cyclesCounterStart	1
 ../Inc/aiTestUtility.h:361:26:cyclesCounterEnd	2
 ../Src/aiValidation.c:148:15:_get_buffer_size	1
-../Src/aiValidation.c:733:36:aiExecCtx	7
+../Src/aiValidation.c:733:36:aiExecCtx	5
 ../Src/aiValidation.c:421:13:send_ai_io_tensor.isra	2
 ../Src/aiValidation.c:544:15:aiOnExecNode_cb	19
 ../Src/aiValidation.c:911:6:aiPbCmdNNInfo	11
@@ -14,4 +14,4 @@
 ../Src/aiValidation.c:951:6:aiPbCmdNNRun	27
 ../Src/aiValidation.c:1097:5:aiValidationInit	1
 ../Src/aiValidation.c:1110:5:aiValidationProcess	13
-../Src/aiValidation.c:1144:6:aiValidationDeInit	4
+../Src/aiValidation.c:1144:6:aiValidationDeInit	3

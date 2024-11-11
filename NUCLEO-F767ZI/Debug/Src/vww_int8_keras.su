@@ -1,0 +1,11 @@
+../Src/vww_int8_keras.c:3099:9:ai_vww_int8_keras_get_info	152	static
+../Src/vww_int8_keras.c:3146:9:ai_vww_int8_keras_get_report	152	static
+../Src/vww_int8_keras.c:3193:10:ai_vww_int8_keras_get_error	0	static
+../Src/vww_int8_keras.c:3200:10:ai_vww_int8_keras_create	16	static
+../Src/vww_int8_keras.c:3246:12:ai_vww_int8_keras_inputs_get	0	static
+../Src/vww_int8_keras.c:3257:12:ai_vww_int8_keras_outputs_get	0	static
+../Src/vww_int8_keras.c:3268:11:ai_vww_int8_keras_destroy	0	static
+../Src/vww_int8_keras.c:3275:9:ai_vww_int8_keras_init	24	static
+../Src/vww_int8_keras.c:3211:10:ai_vww_int8_keras_create_and_init	88	static
+../Src/vww_int8_keras.c:3292:8:ai_vww_int8_keras_run	0	static
+../Src/vww_int8_keras.c:3300:8:ai_vww_int8_keras_forward	0	static

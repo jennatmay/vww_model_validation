@@ -49,11 +49,7 @@ DEF_DATA_IN
 DEF_DATA_OUT
 /* Activations buffers -------------------------------------------------------*/
 
-AI_ALIGNED(32)
-static uint8_t pool0[AI_VWW_DATA_ACTIVATION_1_SIZE];
-
-ai_handle data_activations0[] = {(ai_handle) 0x20000000};
-ai_handle data_activations1[] = {pool0};
+ai_handle data_activations0[] = {NULL};
 
 /* Entry points --------------------------------------------------------------*/
 
@@ -78,30 +74,17 @@ void MX_X_CUBE_AI_Process(void)
 
 static const ai_network_entry_t networks[AI_MNETWORK_NUMBER] = {
     {
-        .name = (const char *)AI_LINEAR_MODEL_NAME,
-        .config = AI_LINEAR_DATA_CONFIG,
-        .ai_get_report = ai_linear_get_report,
-        .ai_create = ai_linear_create,
-        .ai_destroy = ai_linear_destroy,
-        .ai_get_error = ai_linear_get_error,
-        .ai_init = ai_linear_init,
-        .ai_run = ai_linear_run,
-        .ai_forward = ai_linear_forward,
-        .ai_data_params_get = ai_linear_data_params_get,
+        .name = (const char *)AI_VWW_INT8_KERAS_MODEL_NAME,
+        .config = AI_VWW_INT8_KERAS_DATA_CONFIG,
+        .ai_get_report = ai_vww_int8_keras_get_report,
+        .ai_create = ai_vww_int8_keras_create,
+        .ai_destroy = ai_vww_int8_keras_destroy,
+        .ai_get_error = ai_vww_int8_keras_get_error,
+        .ai_init = ai_vww_int8_keras_init,
+        .ai_run = ai_vww_int8_keras_run,
+        .ai_forward = ai_vww_int8_keras_forward,
+        .ai_data_params_get = ai_vww_int8_keras_data_params_get,
         .activations = data_activations0
-    },
-    {
-        .name = (const char *)AI_VWW_MODEL_NAME,
-        .config = AI_VWW_DATA_CONFIG,
-        .ai_get_report = ai_vww_get_report,
-        .ai_create = ai_vww_create,
-        .ai_destroy = ai_vww_destroy,
-        .ai_get_error = ai_vww_get_error,
-        .ai_init = ai_vww_init,
-        .ai_run = ai_vww_run,
-        .ai_forward = ai_vww_forward,
-        .ai_data_params_get = ai_vww_data_params_get,
-        .activations = data_activations1
     },
 };
 

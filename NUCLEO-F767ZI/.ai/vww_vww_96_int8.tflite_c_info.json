@@ -7213,49 +7213,20 @@
     }
   ],
   "environment": {
-    "device": "AMD64, Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, Windows",
+    "device": "stm32 family - 0x451 - STM32F76x/F77x @108/108MHz::fpu,art_lat=3,core_icache,core_dcache",
     "generated_model": {
-      "generated_time": "2024-11-04T14:03:00-0600",
-      "model_files": [
-        {
-          "name": "vww_data_params.h",
-          "signature": "0xc3236318d80dcf3744aca9003845515b"
-        },
-        {
-          "name": "vww_data_params.c",
-          "signature": "0xb21c46bf2907c2791331527ca76df525"
-        },
-        {
-          "name": "vww_data.h",
-          "signature": "0x1b28a6f31982cd0677357a4549da7da4"
-        },
-        {
-          "name": "vww_data.c",
-          "signature": "0xd9aacad1918ba28bfb324740af881863"
-        },
-        {
-          "name": "vww_config.h",
-          "signature": "0x55ff986e13b5eae311d3b9dcb20f8a29"
-        },
-        {
-          "name": "vww.h",
-          "signature": "0xeff1e7e1d23099d2416a4415ca5db568"
-        },
-        {
-          "name": "vww.c",
-          "signature": "0x5d6e051589dcd704ba7b76cdfdd9ba74"
-        }
-      ],
+      "generated_time": "2024-11-11T13:48:26-0600",
+      "model_files": [],
       "n_params": null,
       "name": "vww",
       "size": null,
       "type": null
     },
-    "network_signature": "0x97b0e98fc514c561",
+    "network_signature": "0x7ebd7d9ab0d1132f",
     "test_name": "",
     "tools": [
       {
-        "arguments": "validate --target stm32f7 --name vww -m C:/Users/jenna/Downloads/linear.tflite-NUCLEO-F767ZI-project (1)/NUCLEO-F767ZI/vww_96_int8.tflite --compression none --verbosity 1 --allocate-inputs --allocate-outputs --workspace C:/Users/jenna/AppData/Local/Temp/mxAI_workspace92668061194340017595764834987858366 --output C:/Users/jenna/.stm32cubemx/vww_output --valinput C:/Users/jenna/Downloads/converted.csv",
+        "arguments": "validate --target stm32f7 --name vww -m C:/Users/jenna/Documents/382/vww_space_tracking/vww_model_validation/NUCLEO-F767ZI/vww_96_int8.tflite --compression none --verbosity 1 --allocate-inputs --allocate-outputs --workspace C:/Users/jenna/AppData/Local/Temp/mxAI_workspace153069721510820010137292351691885544 --output C:/Users/jenna/.stm32cubemx/vww_output --mode target --valinput C:/Users/jenna/Downloads/test.csv --desc serial:115200",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
@@ -7913,9 +7884,9 @@
       ],
       "exec_time": {
         "counters": [],
-        "cycles": 0,
-        "cycles_by_macc": 0.0,
-        "duration_ms": 8.722000359673984,
+        "cycles": 8009508,
+        "cycles_by_macc": 1.7417182291952906,
+        "duration_ms": 74.16212029382586,
         "percentage": 100.0
       },
       "id": 0,
@@ -7939,11 +7910,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 1.2310000658035278,
-            "percentage": 14.113735554231745
+            "counters": [
+              1306676
+            ],
+            "cycles": 1306675,
+            "cycles_by_macc": 2.6255746756900127,
+            "duration_ms": 12.098851203918457,
+            "percentage": 16.314057845141882
           },
           "id": 86,
           "inputs": [
@@ -7976,11 +7949,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              12638
+            ],
+            "cycles": 12638,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.032999999821186066,
-            "percentage": 0.37835357097393607
+            "duration_ms": 0.11701852083206177,
+            "percentage": 0.15778745317480328
           },
           "id": 87,
           "inputs": [
@@ -8016,11 +7991,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.4230000078678131,
-            "percentage": 4.849804980787965
+            "counters": [
+              767760
+            ],
+            "cycles": 767760,
+            "cycles_by_macc": 4.62795968558615,
+            "duration_ms": 7.108889102935791,
+            "percentage": 9.58560660721511
           },
           "id": 88,
           "inputs": [
@@ -8060,11 +8037,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 2.7940001487731934,
-            "percentage": 32.033937555095775
+            "counters": [
+              748972
+            ],
+            "cycles": 748972,
+            "cycles_by_macc": 2.53950794770249,
+            "duration_ms": 6.9349260330200195,
+            "percentage": 9.351035279930318
           },
           "id": 89,
           "inputs": [
@@ -8097,11 +8076,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              21880
+            ],
+            "cycles": 21880,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.005000000353902578,
-            "percentage": 0.05732630300062807
+            "duration_ms": 0.20259259641170502,
+            "percentage": 0.27317530244421995
           },
           "id": 90,
           "inputs": [
@@ -8137,11 +8118,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.19200000166893005,
-            "percentage": 2.2013298985475704
+            "counters": [
+              370703
+            ],
+            "cycles": 370703,
+            "cycles_by_macc": 4.4684546769527484,
+            "duration_ms": 3.4324352741241455,
+            "percentage": 4.628286328013605
           },
           "id": 91,
           "inputs": [
@@ -8181,11 +8164,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.37800002098083496,
-            "percentage": 4.333868440644779
+            "counters": [
+              396307
+            ],
+            "cycles": 396307,
+            "cycles_by_macc": 1.3436686286210264,
+            "duration_ms": 3.6695094108581543,
+            "percentage": 4.947956445041995
           },
           "id": 92,
           "inputs": [
@@ -8218,11 +8203,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              11818
+            ],
+            "cycles": 11817,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0020000000949949026,
-            "percentage": 0.022930520666358464
+            "duration_ms": 0.10942592471837997,
+            "percentage": 0.14754961735835093
           },
           "id": 93,
           "inputs": [
@@ -8258,11 +8245,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 1.1200000047683716,
-            "percentage": 12.841091017912266
+            "counters": [
+              724127
+            ],
+            "cycles": 724126,
+            "cycles_by_macc": 4.364308100289296,
+            "duration_ms": 6.704879283905029,
+            "percentage": 9.040840873131325
           },
           "id": 94,
           "inputs": [
@@ -8302,11 +8291,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.6740000247955322,
-            "percentage": 7.7275853818094244
+            "counters": [
+              728294
+            ],
+            "cycles": 728294,
+            "cycles_by_macc": 1.2346979601801118,
+            "duration_ms": 6.743463039398193,
+            "percentage": 9.092867103422877
           },
           "id": 95,
           "inputs": [
@@ -8339,11 +8330,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              11462
+            ],
+            "cycles": 11462,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0020000000949949026,
-            "percentage": 0.022930520666358464
+            "duration_ms": 0.10612963140010834,
+            "percentage": 0.14310490447094704
           },
           "id": 96,
           "inputs": [
@@ -8379,11 +8372,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.08900000154972076,
-            "percentage": 1.0204081389541177
+            "counters": [
+              182932
+            ],
+            "cycles": 182932,
+            "cycles_by_macc": 4.407575173477255,
+            "duration_ms": 1.6938148736953735,
+            "percentage": 2.283935339206297
           },
           "id": 97,
           "inputs": [
@@ -8423,11 +8418,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.30300000309944153,
-            "percentage": 3.4739737514843125
+            "counters": [
+              324438
+            ],
+            "cycles": 324438,
+            "cycles_by_macc": 1.099879312215231,
+            "duration_ms": 3.0040557384490967,
+            "percentage": 4.05066053471396
           },
           "id": 98,
           "inputs": [
@@ -8460,11 +8457,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              6464
+            ],
+            "cycles": 6463,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.05985185131430626,
+            "percentage": 0.08070407247955806
           },
           "id": 99,
           "inputs": [
@@ -8500,11 +8499,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.16700001060962677,
-            "percentage": 1.9146985063397657
+            "counters": [
+              361068
+            ],
+            "cycles": 361067,
+            "cycles_by_macc": 4.349785562837317,
+            "duration_ms": 3.343222141265869,
+            "percentage": 4.507991583870882
           },
           "id": 100,
           "inputs": [
@@ -8544,11 +8545,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.445000022649765,
-            "percentage": 5.1020408656162735
+            "counters": [
+              531416
+            ],
+            "cycles": 531415,
+            "cycles_by_macc": 0.9299348678983785,
+            "duration_ms": 4.920518398284912,
+            "percentage": 6.634813539297574
           },
           "id": 101,
           "inputs": [
@@ -8581,11 +8584,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              10672
+            ],
+            "cycles": 10672,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.003000000026077032,
-            "percentage": 0.03439577966480579
+            "duration_ms": 0.09881481528282166,
+            "percentage": 0.13324162644126583
           },
           "id": 102,
           "inputs": [
@@ -8621,11 +8626,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.04100000113248825,
-            "percentage": 0.4700756643172252
+            "counters": [
+              97784
+            ],
+            "cycles": 97784,
+            "cycles_by_macc": 5.0995567144719685,
+            "duration_ms": 0.9054074287414551,
+            "percentage": 1.220848898540502
           },
           "id": 103,
           "inputs": [
@@ -8665,11 +8672,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.21900001168251038,
-            "percentage": 2.510892027648303
+            "counters": [
+              350747
+            ],
+            "cycles": 350747,
+            "cycles_by_macc": 1.3099794584500466,
+            "duration_ms": 3.247657537460327,
+            "percentage": 4.379132533688766
           },
           "id": 104,
           "inputs": [
@@ -8702,11 +8711,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              7451
+            ],
+            "cycles": 7450,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.06899073719978333,
+            "percentage": 0.09302692119163553
           },
           "id": 105,
           "inputs": [
@@ -8742,11 +8753,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.08000000566244125,
-            "percentage": 0.9172208480100491
+            "counters": [
+              168864
+            ],
+            "cycles": 168864,
+            "cycles_by_macc": 4.9017126269956455,
+            "duration_ms": 1.5635555982589722,
+            "percentage": 2.1082940887669595
           },
           "id": 106,
           "inputs": [
@@ -8786,11 +8799,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.16600000858306885,
-            "percentage": 1.903233223316144
+            "counters": [
+              278704
+            ],
+            "cycles": 278704,
+            "cycles_by_macc": 0.5794960722914614,
+            "duration_ms": 2.580592632293701,
+            "percentage": 3.4796640415208575
           },
           "id": 107,
           "inputs": [
@@ -8823,11 +8838,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              4522
+            ],
+            "cycles": 4522,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.041870370507240295,
+            "percentage": 0.05645789298007177
           },
           "id": 108,
           "inputs": [
@@ -8863,11 +8880,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.03800000250339508,
-            "percentage": 0.43567990066920226
+            "counters": [
+              94869
+            ],
+            "cycles": 94868,
+            "cycles_by_macc": 5.121079622132254,
+            "duration_ms": 0.8784166574478149,
+            "percentage": 1.1844546164100769
           },
           "id": 109,
           "inputs": [
@@ -8907,11 +8926,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.0560000017285347,
-            "percentage": 0.6420545679801818
+            "counters": [
+              95622
+            ],
+            "cycles": 95622,
+            "cycles_by_macc": 0.3696564841231183,
+            "duration_ms": 0.8853889107704163,
+            "percentage": 1.1938559837051026
           },
           "id": 110,
           "inputs": [
@@ -8944,11 +8965,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              3004
+            ],
+            "cycles": 3004,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.027814814820885658,
+            "percentage": 0.03750542016690601
           },
           "id": 111,
           "inputs": [
@@ -8984,11 +9007,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.01900000125169754,
-            "percentage": 0.21783995033460113
+            "counters": [
+              49611
+            ],
+            "cycles": 49610,
+            "cycles_by_macc": 5.263660477453581,
+            "duration_ms": 0.45936110615730286,
+            "percentage": 0.6194012581319706
           },
           "id": 112,
           "inputs": [
@@ -9028,11 +9053,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.020000001415610313,
-            "percentage": 0.22930521200251228
+            "counters": [
+              34798
+            ],
+            "cycles": 34797,
+            "cycles_by_macc": 0.264274322169059,
+            "duration_ms": 0.32220369577407837,
+            "percentage": 0.43445858141262234
           },
           "id": 113,
           "inputs": [
@@ -9065,11 +9092,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              2405
+            ],
+            "cycles": 2405,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.022268518805503845,
+            "percentage": 0.030026809801657926
           },
           "id": 114,
           "inputs": [
@@ -9105,11 +9134,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.01100000087171793,
-            "percentage": 0.12611786766916727
+            "counters": [
+              31164
+            ],
+            "cycles": 31164,
+            "cycles_by_macc": 5.327179487179487,
+            "duration_ms": 0.2885555624961853,
+            "percentage": 0.3890875306058477
           },
           "id": 115,
           "inputs": [
@@ -9149,11 +9180,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.012000000104308128,
-            "percentage": 0.13758311865922315
+            "counters": [
+              21273
+            ],
+            "cycles": 21272,
+            "cycles_by_macc": 0.2601315821654805,
+            "duration_ms": 0.19697222113609314,
+            "percentage": 0.26559680380725503
           },
           "id": 116,
           "inputs": [
@@ -9186,11 +9219,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              1439
+            ],
+            "cycles": 1439,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.013324074447154999,
+            "percentage": 0.017966145512514766
           },
           "id": 117,
           "inputs": [
@@ -9226,11 +9261,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.01100000087171793,
-            "percentage": 0.12611786766916727
+            "counters": [
+              24642
+            ],
+            "cycles": 24642,
+            "cycles_by_macc": 4.738846153846154,
+            "duration_ms": 0.22816666960716248,
+            "percentage": 0.3076593127369873
           },
           "id": 118,
           "inputs": [
@@ -9270,11 +9307,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.01600000075995922,
-            "percentage": 0.18344416533086771
+            "counters": [
+              24994
+            ],
+            "cycles": 24994,
+            "cycles_by_macc": 0.3437869659706748,
+            "duration_ms": 0.2314259260892868,
+            "percentage": 0.3120540852559112
           },
           "id": 119,
           "inputs": [
@@ -9307,11 +9346,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              2228
+            ],
+            "cycles": 2227,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0,
-            "percentage": 0.0
+            "duration_ms": 0.020629629492759705,
+            "percentage": 0.027816935938490366
           },
           "id": 120,
           "inputs": [
@@ -9347,11 +9388,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.005000000353902578,
-            "percentage": 0.05732630300062807
+            "counters": [
+              12209
+            ],
+            "cycles": 12208,
+            "cycles_by_macc": 5.955121951219512,
+            "duration_ms": 0.11304629594087601,
+            "percentage": 0.15243131600471155
           },
           "id": 121,
           "inputs": [
@@ -9391,11 +9434,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.009000000543892384,
-            "percentage": 0.103187344333345
+            "counters": [
+              15638
+            ],
+            "cycles": 15638,
+            "cycles_by_macc": 0.27242004041530204,
+            "duration_ms": 0.14479629695415497,
+            "percentage": 0.19524293046164368
           },
           "id": 122,
           "inputs": [
@@ -9428,11 +9473,13 @@
           },
           "description": "Pad",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
+            "counters": [
+              1074
+            ],
+            "cycles": 1074,
             "cycles_by_macc": 0.0,
-            "duration_ms": 0.0010000000474974513,
-            "percentage": 0.011465260333179232
+            "duration_ms": 0.00994444452226162,
+            "percentage": 0.013409061772859686
           },
           "id": 123,
           "inputs": [
@@ -9468,11 +9515,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.006000000052154064,
-            "percentage": 0.06879155932961158
+            "counters": [
+              12072
+            ],
+            "cycles": 12071,
+            "cycles_by_macc": 5.257404181184669,
+            "duration_ms": 0.11177777498960495,
+            "percentage": 0.15072084582634385
           },
           "id": 124,
           "inputs": [
@@ -9512,11 +9561,13 @@
           },
           "description": "Conv2D",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.06800000369548798,
-            "percentage": 0.7796377079951154
+            "counters": [
+              129492
+            ],
+            "cycles": 129492,
+            "cycles_by_macc": 1.999320652173913,
+            "duration_ms": 1.1990000009536743,
+            "percentage": 1.6167283192596278
           },
           "id": 125,
           "inputs": [
@@ -9551,11 +9602,13 @@
           },
           "description": "Pool",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.023000001907348633,
-            "percentage": 0.2637009970062457
+            "counters": [
+              23642
+            ],
+            "cycles": 23641,
+            "cycles_by_macc": 10.260850694444445,
+            "duration_ms": 0.2189074009656906,
+            "percentage": 0.29517414024625055
           },
           "id": 126,
           "inputs": [
@@ -9583,11 +9636,13 @@
           },
           "description": "Dense",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.03100000135600567,
-            "percentage": 0.3554230689938243
+            "counters": [
+              2070
+            ],
+            "cycles": 2070,
+            "cycles_by_macc": 4.027237354085603,
+            "duration_ms": 0.019166667014360428,
+            "percentage": 0.02584428133718837
           },
           "id": 127,
           "inputs": [
@@ -9622,11 +9677,13 @@
           },
           "description": "Nonlinearity",
           "exec_time": {
-            "counters": [],
-            "cycles": 0,
-            "cycles_by_macc": 0.0,
-            "duration_ms": 0.023000001907348633,
-            "percentage": 0.2637009970062457
+            "counters": [
+              1564
+            ],
+            "cycles": 1563,
+            "cycles_by_macc": 52.1,
+            "duration_ms": 0.014481481164693832,
+            "percentage": 0.019526789562271243
           },
           "id": 128,
           "inputs": [

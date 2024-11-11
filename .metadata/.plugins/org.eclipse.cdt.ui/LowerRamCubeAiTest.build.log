@@ -1,0 +1,10 @@
+16:38:10 **** Incremental Build of configuration Debug for project LowerRamCubeAiTest ****
+make -j20 all 
+arm-none-eabi-size   LowerRamCubeAiTest.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 903452	  17596	 161536	1082584	 1084d8	LowerRamCubeAiTest.elf
+Finished building: default.size.stdout
+ 
+
+16:38:10 Build Finished. 0 errors, 0 warnings. (took 723ms)
+

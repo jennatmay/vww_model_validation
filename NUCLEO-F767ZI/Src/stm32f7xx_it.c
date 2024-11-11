@@ -22,6 +22,10 @@
 #include "stm32f7xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "app_x-cube-ai.h"
+#include "aiTestUtility.h"
+#include <bsp_ai.h>
+#include "cmsis_gcc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,11 +55,26 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint32_t returnEmptyRAM(){
+	extern uint8_t _end;    // End of the heap
+	extern uint8_t _estack; // End of SRAM (start of the stack)
+	volatile uint8_t* sp = (uint8_t*)__get_MSP(); // Main Stack Pointer (MSP)
 
+	uint32_t ret = 0;
+
+	volatile uint8_t *ptr = &_end + 1;
+	while(ptr < sp){
+		if(*ptr ==  0x81){
+			ret++;
+		}
+		ptr++;
+	}
+	return ret;
+}
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern TIM_HandleTypeDef htim3;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -197,6 +216,34 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f7xx.s).                    */
 /******************************************************************************/
+
+/**
+  * @brief This function handles TIM3 global interrupt.
+  */
+void TIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM3_IRQn 0 */
+	  HAL_TIM_IRQHandler(&htim3);
+	  /* USER CODE BEGIN TIM3_IRQn 1 */
+	  static char size_string[10]= {'0','0','0','0','0','0','0','0','\n'};
+
+		  // clear string
+		  for(int i = 0; i <8; i ++)
+					  size_string[i] = '0';
+
+		  // calc new number
+		  uint32_t postAiRam = returnEmptyRAM();
+
+		  // convert number to string
+		  for(int i = 7; i >= 0; i--){
+				size_string[i] = postAiRam % 10 + '0';
+				postAiRam = postAiRam/10;
+			}
+		  HAL_UART_Transmit(&UartHandle, size_string, 9, HAL_MAX_DELAY);
+
+
+  /* USER CODE END TIM3_IRQn 1 */
+}
 
 /* USER CODE BEGIN 1 */
 

@@ -24,10 +24,8 @@ extern "C" {
   */
 /* Includes ------------------------------------------------------------------*/
 #include "ai_platform.h"
-#include "linear.h"
-#include "linear_data.h"
-#include "vww.h"
-#include "vww_data.h"
+#include "vww_int8_keras.h"
+#include "vww_int8_keras_data.h"
 
 #define MIN_HEAP_SIZE 0x800
 #define MIN_STACK_SIZE 0x800
@@ -48,10 +46,9 @@ ai_i8* data_outs[] = { \
 data_out_1 \
 }; \
 
-#define AI_LINEAR_DATA_ACTIVATIONS_START_ADDR 0xFFFFFFFF
-#define AI_VWW_DATA_ACTIVATIONS_START_ADDR 0xFFFFFFFF
+#define AI_VWW_INT8_KERAS_DATA_ACTIVATIONS_START_ADDR 0xFFFFFFFF
 
-#define AI_MNETWORK_DATA_ACTIVATIONS_INT_SIZE AI_VWW_DATA_ACTIVATIONS_SIZE
+#define AI_MNETWORK_DATA_ACTIVATIONS_INT_SIZE AI_VWW_INT8_KERAS_DATA_ACTIVATIONS_SIZE
 
 /* IO buffers ----------------------------------------------------------------*/
 
@@ -59,7 +56,6 @@ extern ai_i8* data_ins[];
 extern ai_i8* data_outs[];
 
 extern ai_handle data_activations0[];
-extern ai_handle data_activations1[];
 
 void MX_X_CUBE_AI_Init(void);
 void MX_X_CUBE_AI_Process(void);
@@ -82,7 +78,7 @@ typedef struct {
     ai_handle * activations;
 } ai_network_entry_t;
 
-#define AI_MNETWORK_NUMBER  (2)
+#define AI_MNETWORK_NUMBER  (1)
 
 AI_API_DECLARE_BEGIN
 

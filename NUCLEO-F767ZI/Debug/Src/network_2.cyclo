@@ -1,0 +1,11 @@
+../Src/network_2.c:3099:9:ai_network_2_get_info	4
+../Src/network_2.c:3146:9:ai_network_2_get_report	4
+../Src/network_2.c:3193:10:ai_network_2_get_error	1
+../Src/network_2.c:3200:10:ai_network_2_create	1
+../Src/network_2.c:3246:12:ai_network_2_inputs_get	2
+../Src/network_2.c:3257:12:ai_network_2_outputs_get	2
+../Src/network_2.c:3268:11:ai_network_2_destroy	1
+../Src/network_2.c:3275:9:ai_network_2_init	4
+../Src/network_2.c:3211:10:ai_network_2_create_and_init	8
+../Src/network_2.c:3292:8:ai_network_2_run	1
+../Src/network_2.c:3300:8:ai_network_2_forward	1

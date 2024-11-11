@@ -1,0 +1,11 @@
+../Src/network_1.c:3476:9:ai_network_1_get_info	152	static
+../Src/network_1.c:3523:9:ai_network_1_get_report	152	static
+../Src/network_1.c:3570:10:ai_network_1_get_error	0	static
+../Src/network_1.c:3577:10:ai_network_1_create	16	static
+../Src/network_1.c:3623:12:ai_network_1_inputs_get	0	static
+../Src/network_1.c:3634:12:ai_network_1_outputs_get	0	static
+../Src/network_1.c:3645:11:ai_network_1_destroy	0	static
+../Src/network_1.c:3652:9:ai_network_1_init	24	static
+../Src/network_1.c:3588:10:ai_network_1_create_and_init	88	static
+../Src/network_1.c:3669:8:ai_network_1_run	0	static
+../Src/network_1.c:3677:8:ai_network_1_forward	0	static
